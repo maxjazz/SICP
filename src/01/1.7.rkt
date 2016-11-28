@@ -19,8 +19,9 @@
 (define (sqrt x)
   (sqrt-iter 1.0 x))
 
-(sqrt 4)
-(sqrt 9)
+(sqrt 0.0001)
+(sqrt 0.00001)
+(sqrt 0.000001)
 
 (define (better-good-enough? guess prev-guess)
   ( < (abs (/ (- guess prev-guess) prev-guess)) 0.1))
@@ -34,3 +35,6 @@
 (define (better-sqrt x)
   (better-sqrt-iter x 1.0 0.5))
 
+(better-sqrt 0.0001)
+(better-sqrt 0.00001)
+(better-sqrt 0.000001)
