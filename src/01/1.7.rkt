@@ -21,7 +21,7 @@
 
 (sqrt 0.0001)
 (sqrt 0.00001)
-(sqrt 0.000001)
+(sqrt 0.00000
 
 (define (better-good-enough? guess prev-guess)
   ( < (abs (/ (- guess prev-guess) prev-guess)) 0.1))
